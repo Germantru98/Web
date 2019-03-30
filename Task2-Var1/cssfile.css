@@ -1,0 +1,32 @@
+.circle {
+    width: 120px;
+    height: 120px;
+    background-color: #9acd32;
+    border-radius: 60px;
+    float: left; 
+    color: white;   
+    text-align: center; 
+    font-size: 50px; 
+    line-height: 120px;
+    margin-top: 100px;
+    
+}
+.line
+{
+    width: 120px;
+    height: 15px;
+    background-color: #bbbbbb;
+    float: left;
+    margin-top: 150px;
+}
+.circle-four
+{
+    background-color: #cf3476;
+}
+.circle:last-child
+{
+    font-size: 10;
+    background-color:#bbbbbb;
+    margin-left: -0.75px;
+    color: black;
+}
