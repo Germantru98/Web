@@ -1,0 +1,38 @@
+.container {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  background: url("http://www.hqwallpapers.ru/wallpapers/nature/gornyy-ruchey.jpg") center center no-repeat;
+}
+
+.box-inp {
+  text-align: center;
+}
+
+input {
+  display: none;
+  margin: 0;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+
+label::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: black;
+  position: relative;
+  top: 350px;
+}
+
+input:checked+label::before {
+  background: red;
+  box-shadow: 0 0 8px 3px white;
+}

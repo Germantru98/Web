@@ -1,0 +1,60 @@
+body
+{
+    background: black;
+}
+.block
+{
+    background-color: orange;
+    height: 50px;
+    width: 100px;
+    margin-top: 5px;
+}
+.peak
+{
+    background-color: #ffd800;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.fline
+{
+    margin-top: 500px;
+    float: left;
+    margin-left: 20px;
+}
+.sline
+{
+    float: left;
+    margin-top: 665px;
+    margin-left: 20px;
+    
+}
+.tline
+{
+    float: left;
+    margin-left: 20px;
+    margin-top:335px;
+}
+.foline
+{
+    float: left;
+    margin-left: 20px;
+    margin-top: 225px;
+}
+.lastline
+{
+    float: left;
+    margin-left: 20px;
+    margin-top: 610px;
+}
+.one
+{
+    background-color: #ffd700
+}
+.two
+{
+    background-color: #ffba00;
+}
+.three 
+{
+    background-color: #ffb300;
+}

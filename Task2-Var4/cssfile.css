@@ -1,0 +1,22 @@
+.menu-list {
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    border-radius: 0 15px 15px 0;
+    background: -moz-linear-gradient(top, #f3f5ea 0%, #dde4c6 46%, #b6c583 100%);    
+    background: -webkit-linear-gradient(top, #f3f5ea 0%, #dde4c6 46%, #b6c583 100%);    
+    background: linear-gradient(to bottom, #f3f5ea 0%, #dde4c6 46%, #b6c583 100%);   
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-link {
+    display: block;
+    padding: 5px 15px;
+    text-transform: capitalize;
+    color: #1a2651;    
+    border-radius: 0 15px 15px 0;
+    box-shadow: 2px 0 #fefefd, 4px 0 #6e7553;
+}

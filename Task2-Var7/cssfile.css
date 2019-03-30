@@ -1,0 +1,15 @@
+ol {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    width: 12px;
+    margin: 3px;
+    padding: 5px;
+    color: #01012f;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 12px;
+    box-shadow: 0 0 4px gray;
+  background: linear-gradient(rgb(252,251,251) 0%, rgb(215,210,204) 100%);
+  }

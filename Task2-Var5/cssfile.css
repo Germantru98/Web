@@ -1,0 +1,48 @@
+table {
+    margin: 40px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+table td {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    padding: 0;
+}
+
+td:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: blue;
+    border-radius: 50%;
+    left: 5px;
+    bottom: 5px;
+}
+td:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 600px;
+    bottom: -300px;
+    left: 0;
+    z-index: -1;
+}
+td:hover {
+    background: orange;
+}
+
+td:hover:before {
+    content: "";
+    background: black;
+}
+tr:hover {
+    background: yellow;
+}
+
+td:hover:after {
+    background: yellow;
+}

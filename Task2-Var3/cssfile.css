@@ -1,0 +1,15 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    background: #ecf5e4;
+    border-radius: 50%;
+    border: 30px solid #95cd8b;
+    border-right: 30px solid #d0e6bb;
+    text-align: center;
+    font-size: 2em;
+    line-height: 100px;
+}
+
+.circle span {
+    font-size: 1em;
+}
