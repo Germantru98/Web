@@ -9,40 +9,43 @@ body
     width: 100px;
     margin-top: 5px;
 }
+.parent
+{
+    width: 100%;
+}
 .peak
 {
     background-color: #ffd800;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.fline
+.line
 {
     margin-top: 500px;
-    float: left;
+    display: inline-block;
     margin-left: 20px;
+    position: relative;
 }
-.sline
+.line:nth-child(2)
 {
-    float: left;
+    
     margin-top: 665px;
     margin-left: 20px;
     
 }
-.tline
+.line:nth-child(3)
 {
-    float: left;
+    
     margin-left: 20px;
     margin-top:335px;
 }
-.foline
-{
-    float: left;
+.line:nth-child(4)
+{    
     margin-left: 20px;
     margin-top: 225px;
 }
-.lastline
+.line:last-child
 {
-    float: left;
     margin-left: 20px;
     margin-top: 610px;
 }
