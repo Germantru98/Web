@@ -1,38 +1,89 @@
-.container {
+.switchers {
+  margin: 20px auto;
   width: 600px;
-  height: 400px;
-  margin: 0 auto;
-  background: url("http://www.hqwallpapers.ru/wallpapers/nature/gornyy-ruchey.jpg") center center no-repeat;
+  height: 380px;
+  position: relative;
 }
 
-.box-inp {
-  text-align: center;
+.switchers .fone {
+  width: 100%;
+  height: 100%;
+  background: url(http://htmlbook.ru/files/river.jpg) no-repeat 100% 100%;
 }
 
-input {
+.switchers input[value='pic1']:checked~.fone {
+  background: url(http://s1.1zoom.me/big3/735/369993-svetik.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.switchers input[value='pic2']:checked~.fone {
+  background: url(https://wallpaperscave.ru/images/original/18/03-11/earth-waterfalls-27745.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.switchers input[value='pic3']:checked~.fone {
+  background: url(https://avatars.mds.yandex.net/get-pdb/1044853/31c0f240-d687-4508-9751-46b3681588fa/s1200?webp=false) no-repeat;
+  background-size: 100% 100%;
+}
+
+.switchers input[value='pic4']:checked~.fone {
+  background: url(https://img.fonwall.ru/o/wu/tropiki-gora-vodopad-rastitelnost.jpg?route=mid&amp;h=750) no-repeat;
+  background-size: 100% 100%;
+}
+
+.switchers input[type='radio'] {
   display: none;
-  margin: 0;
 }
 
-label {
-  display: inline-block;
-  margin: 0 0 0 10px;
+.switchers>label, .switchers input:checked~.fone::after {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 90%;
+  left: 40%;
+}
+
+.switchers>label {
+  background: black;
+  box-shadow: 0 0 0 2px white;
+}
+
+.switchers input:checked~.fone::after {
+  content: '';
+  background: red;
+  box-shadow: 0 0 7px 6px white;
+}
+
+label[for='river'], .switchers input[value='river']:checked~.fone::after {
+  left: 40%;
+}
+
+label[for='pic1'], .switchers input[value='pic1']:checked~.fone::after {
+  left: 45%;
+}
+
+label[for='pic2'], .switchers input[value='pic2']:checked~.fone::after {
+  left: 50%;
+}
+
+label[for='pic3'], .switchers input[value='pic3']:checked~.fone::after {
+  left: 55%;
+}
+
+label[for='pic4'], .switchers input[value='pic4']:checked~.fone::after {
+  left: 60%;
+}
+
+.switchers label:hover {
   cursor: pointer;
 }
 
-label::before {
-  content: '';
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background: black;
-  position: relative;
-  top: 350px;
+.switchers input[type='checkbox'] {
+  display: none;
 }
 
-input:checked+label::before {
-  background: red;
-  box-shadow: 0 0 8px 3px white;
+.switchers input[value='river']:checked~label[for='river'], .switchers input[value='pic1']:checked~label[for='pic1'], .switchers input[value='pic2']:checked~label[for='pic2'], .switchers input[value='pic3']:checked~label[for='pic3'], .switchers input[value='pic4']:checked~label[for='pic4'] {
+  display: none;
 }
