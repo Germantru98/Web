@@ -30,24 +30,24 @@ span::after{
 span::before{
     top: 0;
     transform: skew(25deg);
-    background: linear-gradient(180deg, #DDDDDD, gray);
+    background: linear-gradient(180deg, #DDDDDD, #BFBFBF);
 }
 span::after{
     bottom: 0;
     transform: skew(-25deg);
-    background: linear-gradient(180deg, gray, #DDDDDD);
+    background: linear-gradient(180deg, #BFBFBF, #DDDDDD);
 }
 input:checked + span{
     color: white;
 }
 input:checked + span::before{
-    background: linear-gradient(180deg, #A7DF7F, green);
+    background: linear-gradient(180deg, #A7DF7F, #66C621);
 }
 input:checked + span::after{
-    background: linear-gradient(0deg, #A7DF7F, green);
+    background: linear-gradient(0deg, #A7DF7F, #66C621);
 }
 label:last-child input:checked + span{
-    background: linear-gradient(180deg, #A7DF7F, green, #A7DF7F);
+    background: linear-gradient(180deg, #A7DF7F, #66C621, #A7DF7F);
 }
 label:last-child input + span{
     background: linear-gradient(180deg, #DDDDDD, #BFBFBF, #DDDDDD);
