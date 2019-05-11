@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <title>Task3</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="cssfile.css">
+</head>
+<body>
+  <script src="script.js"></script>
+  <div id="list1" >
+      <table id="table">
+      <tr>
+          <td>
+              <p class="Lable"> Available </p>
+              <ul class="available">
+                  <li onclick='Mark(this)'>Option1</li>   
+                  <li onclick='Mark(this)'>Option2</li>    
+                  <li onclick='Mark(this)'>Option3</li>
+                  <li onclick='Mark(this)'>Option4</li>
+              </ul>
+
+          </td>
+
+          <td id="CenterTD1" class="CenterTD">
+              <p><button id="allToSelected1" class='allToSelected' onclick="AllToSelected(this)"> >> </button></p>   
+              <p><button id="ToSelected1" class='toSelected'  onclick="ToSelected(this)"> > </button></p>
+              <p><button id="ToAvailable1" class='toAvailable'  onclick="ToAvailable(this)"> < </button></p>
+              <p><button id="allToAvailable1" class='allToAvailable'  onclick="AllToAvailable(this)"> << </button></p>
+
+          </td>
+
+          <td>              
+              <p class="Lable"> Selected </p>
+              <ul class="selected">  </ul>          
+          </td>
+      </tr>
+      </table>
+  </div>
+</body>
+</html>
