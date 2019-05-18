@@ -1,5 +1,11 @@
 'use strict';
-var str = prompt("Введите строку")
+var input = document.getElementById('txt');
+var btn = document.getElementById('btn');
+btn.addEventListener('click', clickHandler);
+
+function clickHandler() {
+    console.log(input.value)
+    var str = input.value;
 var ignore = ["?", "!", ":", ";", ",", ".", " ", "\t", "\r"];
 var letters = {}, result;
 var words = str.split(' ');
@@ -16,3 +22,5 @@ result = str.split('').filter(function (v) {
     return !letters[v];
 }).join('');
 alert(result); //У о был собк
+}
+
